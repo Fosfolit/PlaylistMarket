@@ -14,23 +14,23 @@ class SettingsActivity : AppCompatActivity() {
         buttonBackMain.setOnClickListener {
             onDestroy()
         }
-        val button1 = findViewById<Button>(R.id.buttonStyle)
-        button1.setOnClickListener {
+        val buttonStyle = findViewById<Button>(R.id.buttonStyle)
+        buttonStyle.setOnClickListener {
             val displayIntent = Intent(this, EmtpyActivity::class.java)
             startActivity(displayIntent)
         }
-        val button2 = findViewById<Button>(R.id.buttonShare)
-        button2.setOnClickListener {
+        val buttonShare = findViewById<Button>(R.id.buttonShare)
+        buttonShare.setOnClickListener {
             val displayIntent = Intent(this, EmtpyActivity::class.java)
             startActivity(displayIntent)
         }
-        val button3 = findViewById<Button>(R.id.buttonHelper)
-        button3.setOnClickListener {
+        val buttonHelper = findViewById<Button>(R.id.buttonHelper)
+        buttonHelper.setOnClickListener {
             val displayIntent = Intent(this, EmtpyActivity::class.java)
             startActivity(displayIntent)
         }
-        val button4 = findViewById<Button>(R.id.buttonSS)
-        button4.setOnClickListener {
+        val buttonUserText = findViewById<Button>(R.id.buttonUserText)
+        buttonUserText.setOnClickListener {
             val displayIntent = Intent(this, EmtpyActivity::class.java)
             startActivity(displayIntent)
         }
