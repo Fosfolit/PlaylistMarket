@@ -29,37 +29,25 @@
                 android:id="@+id/buttonStyle"
                 style="@style/КнопкиМенюНастроек"
                 android:text="@string/settingbuttonText1"
-
                 app:icon="@drawable/baseline_toggle_on_24"
-                app:iconTint="@color/buttonMainText"
-                app:iconGravity="end"
                 />
             <Button
                 android:id="@+id/buttonShare"
                 style="@style/КнопкиМенюНастроек"
                 android:text="@string/settingbuttonText2"
-
                 app:icon="@drawable/baseline_share_24"
-                app:iconTint="@color/buttonMainText"
-                app:iconGravity="end"
                 />
             <Button
                 android:id="@+id/buttonHelper"
                 style="@style/КнопкиМенюНастроек"
                 android:text="@string/settingbuttonText3"
-
                 app:icon="@drawable/baseline_headset_mic_24"
-                app:iconTint="@color/buttonMainText"
-                app:iconGravity="end"
                 />
             <Button
                 android:id="@+id/buttonUserText"
                 style="@style/КнопкиМенюНастроек"
                 android:text="@string/settingbuttonText4"
-
                 app:icon="@drawable/baseline_arrow_forward_ios_24"
-                app:iconTint="@color/buttonMainText"
-                app:iconGravity="end"
                 />
         </LinearLayout>
         <LinearLayout

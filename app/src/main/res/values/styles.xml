@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <style name="КнопкиГлавногоМеню">
+    <style name="КнопкиГлавногоМеню" parent="Widget.MaterialComponents.Button">
         <item name="android:padding">@dimen/padding</item>
         <item name="android:layout_width">match_parent</item>
         <item name="android:layout_height">0dp</item>
@@ -10,10 +10,10 @@
 
         <item name="android:textColor">@color/buttonMainText</item>
         <item name="android:textSize">@dimen/textSizeMenu</item>
-
-        <item name="app:iconTint">@color/buttonMainText</item>
-        <item name="app:iconSize">@dimen/iconSize</item>
-        <item name="app:iconGravity">textStart</item>
+        <item name="cornerRadius">@dimen/cornerRadiusMenuButton</item>
+        <item name="iconTint">@color/buttonMainText</item>
+        <item name="iconSize">@dimen/iconSize</item>
+        <item name="iconGravity">textStart</item>
     </style>
     <style name="КнопкaПустогоЭкрана">
         <item name="android:layout_width">match_parent</item>
@@ -25,9 +25,8 @@
         <item name="android:textStyle">bold</item>
         <item name="android:gravity">center_vertical</item>
 
-        <item name="app:icon">@drawable/baseline_arrow_back_24</item>
-        <item name="app:iconTint">@color/buttonMainText</item>
-        <item name="app:iconGravity">textStart</item>
+        <item name="iconTint">@color/buttonMainText</item>
+        <item name="iconGravity">textStart</item>
     </style>
     <style name="КнопкиМенюНастроек">
         <item name="android:layout_width">match_parent</item>
@@ -39,9 +38,9 @@
         <item name="android:textSize">@dimen/textSetting</item>
         <item name="android:gravity">center_vertical</item>
 
-        <item name="app:icon">@drawable/baseline_toggle_on_24</item>
-        <item name="app:iconTint">@color/buttonMainText</item>
-        <item name="app:iconGravity">end</item>
+        <item name="icon">@drawable/baseline_toggle_on_24</item>
+        <item name="iconTint">@color/buttonMainText</item>
+        <item name="iconGravity">end</item>
     </style>
     <style name="КнопкиМенюНастроекГланая">
         <item name="android:layout_width">match_parent</item>
@@ -54,8 +53,8 @@
         <item name="android:textStyle">bold</item>
         <item name="android:gravity">center_vertical</item>
 
-        <item name="app:icon">@drawable/baseline_toggle_on_24</item>
-        <item name="app:iconTint">@color/buttonMainText</item>
-        <item name="app:iconGravity">end</item>
+        <item name="icon">@drawable/baseline_toggle_on_24</item>
+        <item name="iconTint">@color/buttonMainText</item>
+        <item name="iconGravity">end</item>
     </style>
 </resources>

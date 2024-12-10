@@ -31,44 +31,27 @@
             android:layout_weight="15"
             android:orientation="vertical"
             android:layout_marginHorizontal="@dimen/layoutMarginHorizontalMenu"
-
             >
 
             <Button
                 android:id="@+id/buttonSearch"
                 style="@style/КнопкиГлавногоМеню"
                 android:text="@string/menubuttonText1"
-
-                app:cornerRadius="@dimen/cornerRadiusMenuButton"
                 app:icon="@drawable/baseline_search_24"
-                app:iconTint="@color/buttonMainText"
-                app:iconSize="@dimen/iconSize"
-                app:iconGravity="textStart"
                 />
 
             <Button
                 android:id="@+id/buttonMedia"
                 style="@style/КнопкиГлавногоМеню"
                 android:text="@string/menubuttonText2"
-
-
-                app:cornerRadius="@dimen/cornerRadiusMenuButton"
                 app:icon="@drawable/baseline_library_music_24"
-                app:iconTint="@color/buttonMainText"
-                app:iconSize="@dimen/iconSize"
-                app:iconGravity="textStart"
                 />
 
             <Button
                 android:id="@+id/buttonSetting"
                 style="@style/КнопкиГлавногоМеню"
                 android:text="@string/setting"
-
-                app:cornerRadius="@dimen/cornerRadiusMenuButton"
                 app:icon="@drawable/baseline_build_24"
-                app:iconTint="@color/buttonMainText"
-                app:iconSize="@dimen/iconSize"
-                app:iconGravity="textStart"
                 />
         </LinearLayout>
     </LinearLayout>
