@@ -1,6 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <style name="КнопкиГлавногоМеню" parent="ТекстСветPrimary">
+    <style name="styleColorPrimary" parent="baseColorPrimary">
+        <item name="android:orientation">vertical</item>
+        <item name="android:background">@color/buttonMainText</item>
+    </style>
+    <style name="styleColorSecondary" parent="baseColorSecondary">
+        <item name="android:orientation">vertical</item>
+        <item name="android:background">@color/buttonMainText</item>
+    </style>
+    <style name="КнопкиГлавногоМеню" parent="colorTextPrimary">
         <!-- Форма кнопки -->
         <item name="android:layout_width">match_parent</item>
         <item name="android:layout_height">0dp</item>
@@ -15,8 +23,7 @@
         <item name="iconSize">@dimen/iconSize</item>
         <item name="iconGravity">textStart</item>
     </style>
-    <style name="ТекстГлавногоМеню" parent="ТекстСветSecondary">
-        android:gravity="start|center_vertical"
+    <style name="ТекстГлавногоМеню" parent="colorTextSecondary">
         <!-- Форма кнопки -->
         <item name="android:layout_width">match_parent</item>
         <item name="android:layout_height">0dp</item>
@@ -26,7 +33,7 @@
         <item name="android:textSize">@dimen/textSizeMenu</item>
         <item name="android:gravity">start|center_vertical</item>
     </style>
-    <style name="КнопкaПустогоЭкрана" parent="ТекстСветPrimary">
+    <style name="buttonVoid" parent="colorTextPrimary">
         <!-- Форма кнопки -->
         <item name="android:layout_width">match_parent</item>
         <item name="android:layout_height">80dp</item>
@@ -39,11 +46,13 @@
         <item name="iconGravity">textStart</item>
         <!-- Цвет -->
     </style>
-    <style name="КнопкиМенюНастроек"  parent="ТекстСветPrimary">
+    <style name="buttonSetting"  parent="colorTextPrimary">
         <!-- Форма кнопки -->
         <item name="android:layout_width">match_parent</item>
         <item name="android:layout_height">0dp</item>
         <item name="android:layout_weight">1</item>
+        <!-- Вид -->
+        <item name="cornerRadius">0dp</item>
         <!-- Текст  -->
         <item name="android:textSize">@dimen/textSetting</item>
         <item name="android:textFontWeight">100</item>
@@ -51,17 +60,19 @@
         <!-- Иконка  -->
         <item name="iconGravity">end</item>
     </style>
-    <style name="КнопкиМенюНастроекГланая"  parent="ТекстСветPrimary">
+    <style name="buttonSettingMain"  parent="colorTextPrimary">
         <!-- Форма кнопки -->
         <item name="android:layout_width">match_parent</item>
         <item name="android:layout_height">0dp</item>
         <item name="android:layout_weight">1</item>
+        <!-- Вид -->
+        <item name="cornerRadius">0dp</item>
         <!-- Текст  -->
         <item name="android:textSize">@dimen/textSize</item>
         <item name="android:textStyle">bold</item>
         <item name="android:textFontWeight">100</item>
         <item name="android:gravity">center_vertical</item>
         <!-- Иконка  -->
-        <item name="iconGravity">end</item>
+        <item name="iconGravity">textStart</item>
     </style>
 </resources>

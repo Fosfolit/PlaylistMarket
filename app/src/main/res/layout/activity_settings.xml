@@ -9,50 +9,48 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:orientation="vertical">
+        style="@style/styleColorSecondary">
         <Button
             android:id="@+id/buttonBackMain"
-            style="@style/КнопкиМенюНастроекГланая"
+            style="@style/buttonSettingMain"
             android:text="@string/setting"
-
             app:icon="@drawable/baseline_arrow_back_24"
-            app:iconTint="@color/buttonMainText"
-            app:iconGravity="textStart"
             />
         <LinearLayout
-            android:orientation="vertical"
+            style="@style/styleColorSecondary"
             android:layout_width="match_parent"
             android:layout_height="0dp"
             android:layout_weight="4"
             android:layout_marginTop="@dimen/paddingSettingMenu">
             <Button
                 android:id="@+id/buttonStyle"
-                style="@style/КнопкиМенюНастроек"
+                style="@style/buttonSettingMain"
                 android:text="@string/settingbuttonText1"
                 app:icon="@drawable/baseline_toggle_on_24"
                 />
             <Button
                 android:id="@+id/buttonShare"
-                style="@style/КнопкиМенюНастроек"
+                style="@style/buttonSettingMain"
                 android:text="@string/settingbuttonText2"
                 app:icon="@drawable/baseline_share_24"
                 />
             <Button
                 android:id="@+id/buttonHelper"
-                style="@style/КнопкиМенюНастроек"
+                style="@style/buttonSettingMain"
                 android:text="@string/settingbuttonText3"
                 app:icon="@drawable/baseline_headset_mic_24"
                 />
             <Button
                 android:id="@+id/buttonUserText"
-                style="@style/КнопкиМенюНастроек"
+                style="@style/buttonSettingMain"
                 android:text="@string/settingbuttonText4"
                 app:icon="@drawable/baseline_arrow_forward_ios_24"
                 />
         </LinearLayout>
         <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="400dp">
+            android:layout_width="match_parent"
+            style="@style/styleColorSecondary"
+            android:layout_height="400dp">
         </LinearLayout>
     </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>
