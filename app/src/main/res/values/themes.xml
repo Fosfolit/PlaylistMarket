@@ -5,5 +5,27 @@
         <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
     </style>
 
+    <style name="ЦентСветPrimary" parent="Base.Theme.PlaylistMarket">
+        <item name="android:backgroundTint">@color/mainBackground</item>
+
+    </style>
+    <style name="ЦентСветSecondary" parent="Base.Theme.PlaylistMarket">
+        <item name="android:backgroundTint">@color/mainBackgroundText</item>
+
+    </style>
+
+
+    <style name="ТекстСветPrimary" parent="ЦентСветSecondary">
+        <item name="android:textColor">@color/buttonMainText</item>
+        <item name="iconTint">@color/buttonMainText</item>
+    </style>
+    <style name="ТекстСветSecondary" parent="ЦентСветPrimary">
+        <item name="android:textColor">@color/mainBackgroundText</item>
+        <item name="iconTint">@color/mainBackgroundText</item>
+    </style>
+
+
+
+
     <style name="Theme.PlaylistMarket" parent="Base.Theme.PlaylistMarket" />
 </resources>
