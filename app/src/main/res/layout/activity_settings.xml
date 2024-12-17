@@ -17,7 +17,7 @@
             android:layout_weight="1"
             android:backgroundTint="@color/settingBackground"
 
-            android:text="@string/setting"
+            android:text="@string/settingName"
             android:textColor="@color/buttonMainText"
             android:textSize="@dimen/textSize"
             android:textStyle="bold"
@@ -82,7 +82,7 @@
                 app:iconGravity="end"
                 />
             <Button
-                android:id="@+id/buttonUserText"
+                android:id="@+id/buttonSS"
                 android:layout_width="match_parent"
                 android:layout_height="0dp"
                 android:layout_weight="1"

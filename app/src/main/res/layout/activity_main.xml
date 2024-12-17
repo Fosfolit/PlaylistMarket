@@ -83,7 +83,7 @@
                 android:layout_margin="@dimen/layoutMarginMenu"
                 android:backgroundTint="@color/buttonMain"
 
-                android:text="@string/setting"
+                android:text="@string/menubuttonText3"
                 android:textColor="@color/buttonMainText"
                 android:textSize="@dimen/textSizeMenu"
 
