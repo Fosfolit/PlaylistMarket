@@ -27,16 +27,6 @@ class MainActivity : AppCompatActivity() {
             val displayIntent = Intent(this, SettingsActivity::class.java)
             startActivity(displayIntent)
         }
-        val buttonSearch = findViewById<Button>(R.id.buttonSearch)
-        buttonSearch.setOnClickListener {
-            val displayIntent = Intent(this, EmtpyActivity::class.java)
-            startActivity(displayIntent)
-        }
-        val buttonMedia = findViewById<Button>(R.id.buttonMedia)
-        buttonMedia.setOnClickListener {
-            val displayIntent = Intent(this, EmtpyActivity::class.java)
-            startActivity(displayIntent)
-        }
 
     }
 }
