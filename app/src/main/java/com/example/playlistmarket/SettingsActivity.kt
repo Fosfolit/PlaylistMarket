@@ -1,6 +1,7 @@
 package com.example.playlistmarket
 
 import android.content.Intent
+import android.net.Uri
 import android.os.Bundle
 import android.widget.Button
 import androidx.appcompat.app.AppCompatActivity
@@ -26,13 +27,20 @@ class SettingsActivity : AppCompatActivity() {
         }
         val buttonHelper = findViewById<Button>(R.id.buttonHelper)
         buttonHelper.setOnClickListener {
-            val displayIntent = Intent(this, EmtpyActivity::class.java)
-            startActivity(displayIntent)
+            val openLinkIntent = Intent(Intent.ACTION_SEND)
+
+            openLinkIntent.setType("plain/text")
+            openLinkIntent.putExtra(Intent.EXTRA_TEXT, "vds")
+            openLinkIntent.putExtra(Intent.EXTRA_STREAM, "2134231444")
+            startActivity(openLinkIntent)
         }
         val buttonUserText = findViewById<Button>(R.id.buttonUserText)
         buttonUserText.setOnClickListener {
-            val displayIntent = Intent(this, EmtpyActivity::class.java)
-            startActivity(displayIntent)
+            val address = Uri.parse("https://yandex.ru/legal/practicum_offer/")
+            val openLinkIntent = Intent(Intent.ACTION_VIEW)
+            openLinkIntent.data = address
+            startActivity(openLinkIntent)
         }
     }
+
 }
