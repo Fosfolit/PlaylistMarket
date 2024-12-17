@@ -10,8 +10,8 @@ class EmtpyActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
         setContentView(R.layout.activity_empty)
-        val buttonSetting = findViewById<Button>(R.id.buttonBack)
-        buttonSetting.setOnClickListener {
+        val buttonBack = findViewById<Button>(R.id.buttonBack)
+        buttonBack.setOnClickListener {
             onDestroy()
         }
     }
